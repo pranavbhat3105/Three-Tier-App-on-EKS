@@ -2,51 +2,53 @@
 This repository involves deploying a Three-Tier Web Application using ReactJS, NodeJS, and MongoDB, with deployment on AWS EKS. 
 
 
-#Prerequisites
-Basic knowledge of Docker, and AWS services.
-An AWS account with necessary permissions.
+## Prerequisites
 
-Application Code
+- Tool or knowledge you absolutely need (e.g., Docker, AWS, Kubernetes).
+- Minimum version requirements, if applicable.
+
+## Application Code
+
 The Application-Code directory contains the source code for the Three-Tier Web Application. Dive into this directory to explore the frontend and backend implementations.
 
-Jenkins Pipeline Code
+## Jenkins Pipeline Code
 In the Jenkins-Pipeline-Code directory, you'll find Jenkins pipeline scripts. These scripts automate the CI/CD process, ensuring smooth integration and deployment of your application.
 
-Jenkins Server Terraform
+## Jenkins Server Terraform
 Explore the Jenkins-Server-TF directory to find Terraform scripts for setting up the Jenkins Server on AWS. These scripts simplify the infrastructure provisioning process.
 
-Kubernetes Manifests Files
+## Kubernetes Manifests Files
 The Kubernetes-Manifests-Files directory holds Kubernetes manifests for deploying your application on AWS EKS. Understand and customize these files to suit your project needs.
 
-Project Details
+## Project Details
 
 🛠️ Tools Explored:
-Terraform & AWS CLI for AWS infrastructure
-Jenkins, Sonarqube, Terraform, Kubectl, and more for CI/CD setup
-Helm, Prometheus, and Grafana for Monitoring
-ArgoCD for GitOps practices
+
+- Terraform & AWS CLI for AWS infrastructure
+- Jenkins, Sonarqube, Terraform, Kubectl, and more for CI/CD setup
+- Helm, Prometheus, and Grafana for Monitoring
+- ArgoCD for GitOps practices
 
 🚢 High-Level Overview:
-IAM User setup & Terraform magic on AWS
-Jenkins deployment with AWS integration
-EKS Cluster creation & Load Balancer configuration
-Private ECR repositories for secure image management
-Helm charts for efficient monitoring setup
-GitOps with ArgoCD - the cherry on top!
+- IAM User setup & Terraform magic on AWS
+- Jenkins deployment with AWS integration
+- EKS Cluster creation & Load Balancer configuration
+- Private ECR repositories for secure image management
+- Helm charts for efficient monitoring setup
+- GitOps with ArgoCD 
 
 📈 The journey covered everything from setting up tools to deploying a Three-Tier app, ensuring data persistence, and implementing CI/CD pipelines.
 
 
-Getting Started
+## Getting Started
 
 Step 1: IAM Configuration
-
-Create a user eks-admin with AdministratorAccess.
-Generate Security Credentials: Access Key and Secret Access Key.
+-Create a user eks-admin with AdministratorAccess.
+-Generate Security Credentials: Access Key and Secret Access Key.
 
 Step 2: EC2 Setup
-Launch an Ubuntu instance in your favourite region (eg. region us-west-2).
-SSH into the instance from your local machine.
+-Launch an Ubuntu instance in your favourite region (eg. region us-west-2).
+-SSH into the instance from your local machine.
 
 Step 3: Install AWS CLI v2
 ```
